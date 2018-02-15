@@ -9,11 +9,11 @@ const config =  {
     googleAuth: rc('gauth', {})
   },
   production: {
-    rolloutServiceHost: '{{ key "configurations/microservices/rollout/rollout-service-url" }}',
-    rolloutServicePort: '{{ key "configurations/microservices/rollout/rollout-service-port" }}',
-    port: '{{ key "configurations/microservices/rollout/rollout-dashboard-port" }}',
+    rolloutServiceHost: process.env['ROLLOUT_HOST'],
+    rolloutServicePort: process.env['ROLLOUT_PORT'],
+    port: process.env['ROLLOUT_DASHBOARD_PORT'],
     googleAuth: {
-      clientId: '{{ key "configurations/microservices/rollout/google-auth-client-id" }}'
+      clientId: process.env['GOOGLE_AUTH_ID']
     }
   }
 };
