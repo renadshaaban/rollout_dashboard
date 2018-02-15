@@ -15,7 +15,8 @@ const config =  {
     rolloutServicePort: process.env['ROLLOUT_PORT'],
     port: process.env['ROLLOUT_DASHBOARD_PORT'],
     googleAuth: {
-      clientId: process.env['GOOGLE_AUTH_ID']
+      clientId: process.env['GOOGLE_CLIENT_ID'],
+      apiKey: process.env['GOOGLE_API_KEY']
     }
   }
 };
