@@ -22,5 +22,5 @@ app.listen(config.port, function(err) {
   if (err) {
     return console.error(err);
   }
-  console.log('Listening at http://localhost:' + config.port);
+  console.log('Listening at port' + config.port);
 });
