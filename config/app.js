@@ -1,4 +1,6 @@
 const env = process.env['NODE_ENV'] || 'development';
+console.log(env);
+console.log(process.env['NODE_ENV']);
 const rc = require('rc');
 
 const config =  {
